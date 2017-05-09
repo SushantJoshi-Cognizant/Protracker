@@ -1,0 +1,38 @@
+<div>
+    <nav class="navbar navbar-default navbar-custom">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle Navigation</span>Menu
+            </button>
+            <a (click)="navigate('dashboard')" class="navbar-brand">Protracker</a>
+        </div>
+
+        <div class="collapse navbar-collapse" uib-collapse="">
+            <ul class="nav navbar-nav navbar-left">
+                <li (click)="navigate('dashboard')" [class.active]="selectedPage === 'dashboard'">
+                    <a>Dashboard</a>
+                </li>
+                <li (click)="navigate('issues')" [class.active]="selectedPage === 'issues'">
+                    <a>Issues</a>
+                </li>
+                <li (click)="navigate('projects')" [class.active]="selectedPage === 'projects'">
+                    <a>Projects</a>
+                </li>
+                <li (click)="navigate('notes')" [class.active]="selectedPage === 'notes'">
+                    <a>Notes</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right ul-padding">
+                <li>
+                    <!--<div>
+                        <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+                    </div>-->
+                    <div class="authButtons">
+                        <button type="button" class="btn btn-default signUpBtn" (click)="navigate('register')">Sign Up</button>
+                        <button type="button" class="btn btn-default signInBtn" (click)="navigate('login')">Sign In</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
