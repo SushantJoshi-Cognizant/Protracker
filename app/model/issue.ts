@@ -10,4 +10,5 @@ export class Issue {
     issueType: string;
     comments : Comment[];
     issueStatus: string;
+    assignedTo: string;
 }
