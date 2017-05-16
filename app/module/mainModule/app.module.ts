@@ -2,6 +2,7 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {RouterModule} from '@angular/router';
+import {HttpModule} from '@angular/http';
 
 // Application Components Dependencies
 import {AppComponent} from './app.component';
@@ -15,6 +16,7 @@ import {IssuesModule} from '../issues/issues.module';
 import {ProjectsModule} from '../projects/projects.module';
 import {NotesModule} from '../notes/notes.module';
 import {ManagePasswordModule} from '../managePassword/app.manage-password.module';
+import {ServerErrorModule} from '../error/server-error.module';
 
 
 // Application Service Dependencies
@@ -25,7 +27,7 @@ import {CommonAppService} from '../../sharedService/app.common-service';
     imports: [BrowserModule,LoginModule,AppRoutingModule,
                 DashboardModule,RegistrationModule,
                 IssuesModule,ProjectsModule,NotesModule,
-                ManagePasswordModule],
+                ManagePasswordModule,HttpModule,ServerErrorModule],
     declarations: [AppComponent],
     providers: [CommonAppService],
     bootstrap: [AppComponent]
