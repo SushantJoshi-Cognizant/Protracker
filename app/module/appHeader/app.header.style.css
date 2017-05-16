@@ -179,7 +179,7 @@ input.ng-invalid-required{
 	color: #18BC9C !important;
 }
 
-.navbar-custom .navbar-nav li a {
+.navbar-custom .navbar-nav>li>a {
     cursor: pointer;
 	color: #fff !important;
 }
@@ -199,6 +199,7 @@ input.ng-invalid-required{
 
 .fa-user {
 	color: #fff !important;
+	cursor: pointer;
 }
 
 .ul-padding {
@@ -237,4 +238,62 @@ input.ng-invalid-required{
 		width: 150px;
     	text-align: center;
 	}
+}
+
+.profileBtn {
+    background: transparent;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 70px;
+    height: 35px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.profileBtn:hover,
+.profileBtn:focus {
+    background-color: #18BC9C !important;
+    color: white !important;
+    border-color: #18BC9C !important;
+}
+.profileMenu {
+    position: absolute;
+    background: #fff;
+    width: 150px;
+    margin-top: 5px;
+    border: 1px solid darkgray;
+    margin-left: -10px;
+    border-radius: 10px;
+}
+
+.profileMenu li {
+    list-style-type: none !important;
+}
+
+.dropdown-menu {
+    display : block !important;
+}
+.dropdown-menu>li>a {
+    color: #333 !important;
+}
+
+.searchBox {
+    padding-top: 15px;
+    color: #fff;
+}
+.searchIndex {
+    width: 250px !important;
+}
+.searchInput {
+    width: 20px;
+    background: url(/app/style/images/search.png) center right no-repeat;
+    background-size: 20px 20px;
+    border: none;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+input[type="text"]:focus {
+    width: 200px;
+    border-bottom: 1px solid #fff;
+    outline: none;
 }
