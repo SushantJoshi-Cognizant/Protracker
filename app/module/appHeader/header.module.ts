@@ -1,10 +1,10 @@
 import {NgModule} from '@angular/core';
-
+import {CommonModule} from '@angular/common';
 import {AppHeaderComponent} from './header.component';
 
 
 @NgModule({
-    imports:        [],
+    imports:        [CommonModule],
     declarations:   [AppHeaderComponent],
     providers:      [],
     bootstrap:      [AppHeaderComponent],
