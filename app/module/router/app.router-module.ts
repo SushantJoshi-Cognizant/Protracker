@@ -9,6 +9,7 @@ import {IssuesComponent} from '../issues/issues.component';
 import {ProjectsComponent} from '../projects/projects.component';
 import {NotesComponent} from '../notes/notes.component';
 import {ForgotPasswordComponent} from '../managePassword/forgot-password.component';
+import {ServerErrorComponent} from '../error/server-error.component';
 
 const routes : Routes = [
     {path: '', component: AppComponent},
@@ -18,7 +19,8 @@ const routes : Routes = [
     {path: 'issues', component: IssuesComponent},
     {path: 'projects', component: ProjectsComponent},
     {path: 'notes', component: NotesComponent},
-    {path: 'forgotPassword', component: ForgotPasswordComponent}
+    {path: 'forgotPassword', component: ForgotPasswordComponent},
+    {path: 'error', component: ServerErrorComponent}
 ]
 
 @NgModule({
