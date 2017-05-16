@@ -18,7 +18,7 @@ export class AppComponent implements OnInit{
     // This method will get the user id from cookies and will navigate to the page accordingly.
     // If user id found - navigate to Dashboard, otherwise navigate to Login Page
     getUserCookie() : void {
-            var userCookie = this.commonService.getCookies("userName");
+            var userCookie = this.commonService.getCookies("userId");
             if(userCookie !== ''){
                 this.router.navigate(['/dashboard']);
             }else {
@@ -28,12 +28,12 @@ export class AppComponent implements OnInit{
     }
 
     setCookies() : void {
-        this.commonService.setCookies("userName","sushant",1);
+        this.commonService.setCookies("userId","sushant",1);
     }
 
     ngOnInit() : void {
         this.getUserCookie();
-        //this.commonService.deleteCookie("userName");
+        //this.commonService.deleteCookie("userId");
         //this.setCookies();
     }
 
